@@ -54,7 +54,7 @@ const Newsletter = () => {
                 id="ck_subscribe_button"
                 class={` ${albumStyle.footer} ${
                   albumStyle.newsletter
-                } text-sm shadow block w-full sm:w-auto rounded-lg sm:rounded-none focus:outline-none bg-indigo hover:bg-indigo-dark focus:bg-indigo-dark text-white text-shadow uppercase tracking-wide font-semibold px-6 py-4 lg:py-5`}
+                } text-sm shadow block w-full sm:w-auto rounded-lg sm:rounded-none focus:outline-none bg-indigo hover:bg-indigo-dark focus:bg-indigo-dark text-gray-900 text-shadow uppercase tracking-wide font-semibold px-6 py-4 lg:py-5`}
                 onClick={() => setSubscribe((subscribe = true))}
               >
                 Subscribe

@@ -142,16 +142,15 @@ const IndexPage = ({ data }) => {
            md:text-xl"
           />
           <div className="mt-3 text-gray-700 leading-relaxed md:text-xl">
-            Hey, meet Bilal, Kwaku, Patrick &amp; Tom. 4 Black &amp; Mixed-Race
-            guys who became friends whilst studying at Cambridge University.
-            Join us as we talk about life before, during and well - after 'The
-            Bridge'. Expect chats about life, and our own experiences
+            What Day Is It? podcast is the digital version of happy hour with
+            your besties. PLAY Digital Founder Bailey Stanworth and her right
+            hand gal Jacci Rai are covering every girl problem, life struggle
+            and biz reality there is. Get ready to cheers and celebrate the
+            inspirational and relatable af stories from girls (and gents) who
+            may or may not have it all together. Also, FYI, it’s not drinking
+            alone if you’re listening to WDII!
           </div>
-          <div className="mt-3 text-gray-700 leading-relaxed md:text-xl">
-            Cast:
-            <br /> Kwaku: @KwakuDapaah_ <br /> Patrick: @CariocoLondrino <br />{" "}
-            Bilal: @Tweetsbybilal <br /> Tom: @TomTheEconomist
-          </div>
+          <div className="mt-3 text-gray-700 leading-relaxed md:text-xl" />
           <ul className={`flex justify-center mt-12 md:mt-16 text-gray-900`}>
             {data.site.siteMetadata.facebook !== "" ? (
               <li className="">
@@ -176,7 +175,7 @@ const IndexPage = ({ data }) => {
             )}
 
             {data.site.siteMetadata.twitter !== "" ? (
-              <li className="ml-10">
+              <li className="">
                 <a href={data.site.siteMetadata.twitter}>
                   <svg
                     width="24"
@@ -198,7 +197,7 @@ const IndexPage = ({ data }) => {
             )}
 
             {data.site.siteMetadata.instagram !== "" ? (
-              <li className="ml-10">
+              <li className="">
                 <a href={data.site.siteMetadata.instagram}>
                   <svg
                     width="24"
@@ -220,20 +219,18 @@ const IndexPage = ({ data }) => {
             )}
           </ul>
 
-          {/* <div className=" text-center text-xl font-medium text-gray-900 md:font-semibol md:text-3xl mt-16 lgx:mt-24 ">
+          <div className=" text-center text-xl font-medium text-gray-900 md:font-semibol md:text-3xl mt-16 lgx:mt-24 ">
             Send in your Questions
           </div>
           <div className="mt-6 mb-6 text-gray-700 leading-relaxed md:text-xl">
-            Each week Victoria picks topics and questions submitted by listeners
-            to address and provide solutions to dog owners all over the world in
-            each and every episode.
+            Got any questions? want to send us feedback or a comment. Email us!
           </div>
           <a
             className="mt-6"
-            href="mailto:askdogguru@gmail.com?subject=Question Submission"
+            href="mailto:whatdayisitpodcast@gmail.com?subject=Question Submission"
           >
             Click here to submit your question
-          </a> */}
+          </a>
           <Newsletter />
         </div>
         {/* ###############################    ABOUT END ########################################### */}
@@ -281,7 +278,9 @@ const IndexPage = ({ data }) => {
           <div className="flex justify-center mt-16 lgx:max-w-960 lgx:mx-12">
             <button
               onClick={() => setCount(count + 5)}
-              className={`{albumStyles.footer} text-white font-bold py-3 px-8 rounded`}
+              className={` ${
+                albumStyle.footer
+              } text-gray-900 font-medium py-3 px-8 rounded`}
             >
               <span>Load More</span>
             </button>
@@ -301,7 +300,9 @@ export const query = graphql`
           title
           pubDate
           id
-          content
+          content {
+            encoded
+          }
           itunes {
             duration
             summary

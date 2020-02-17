@@ -1,21 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
-    description: ``,
-    author: ``,
+    title: `What Day Is It?`,
+    description: `What Day Is It? podcast is the digital version of happy hour with your besties. PLAY Digital Founder Bailey Stanworth and her right hand gal Jacci Rai are covering every girl problem, life struggle and biz reality there is. Get ready to cheers and celebrate the inspirational and relatable af stories from girls (and gents) who may or may not have it all together. Also, FYI, it’s not drinking alone if you’re listening to WDII!`,
+    author: `by PLAY DIGITAL`,
     twitter: ``,
-    instagram: ``,
+    instagram: `https://www.instagram.com/whatdayisitpodcast/`,
     facebook: ``,
     youtube: ``,
-    apple: ``,
-    google: ``,
-    pocket: ``,
-    spotify: ``,
-    overcast: ``,
-    castbox: ``,
-    castro: `https://castro.fm/itunes/`,
+    apple: `https://podcasts.apple.com/podcast/id1450232346?ct=podlink&mt=2`,
+    google: `https://podcasts.google.com/?feed=aHR0cHM6Ly93aGF0ZGF5aXNpdC5saWJzeW4uY29tL3Jzcw==`,
+    pocket: `https://pca.st/itunes/1450232346`,
+    spotify: `https://open.spotify.com/show/16dIprBDPbKq5ANPej1cYg`,
+    overcast: `https://overcast.fm/itunes1450232346`,
+    castbox: `https://castbox.fm/vic/1450232346`,
+    castro: `https://castro.fm/itunes/1450232346`,
     podbean: ``,
-    beaker: ``,
+    beaker: `https://www.breaker.audio/shows?feed_url=https%3A%2F%2Fwhatdayisit.libsyn.com%2Frss`,
     stitcher: ``
   },
   plugins: [
@@ -52,7 +52,7 @@ module.exports = {
         // url: `https://www.gatsbyjs.org/blog/rss.xml`,
         // url: `https://boysinthecave.com/feed/podcast/`,
         // url: `http://boysinthecave.libsyn.com/rss`,
-        url: `http://feeds.soundcloud.com/users/soundcloud:users:407560764/sounds.rss`,
+        url: `http://whatdayisit.libsyn.com/rss`,
         name: `GatsbyBlog`,
         // Optional
         // Read parser document: https://github.com/bobby-brennan/rss-parser#readme
